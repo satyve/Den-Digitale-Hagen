@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Den digitale hagen</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="shared.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io (2)//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io (2)//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io (2)//favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io (2)//site.webmanifest">
+</head>
+
+<body>
+    <div id="clouds">
+        <img class="sky" id="cloud1" src="images/cloud--6.png" alt="cloud">
+        <img class="sky" id="cloud2" src="images/cloud-3.png" alt="cloud">
+        <img class="sky" id="cloud3" src="images/cloud-4.png" alt="cloud">
+        <img class="sky" id="cloud4" src="images/cloud-6.png" alt="cloud">
+        <img class="sky" id="cloud5" src="images/bigger-cloud.png" alt="cloud">
+        <img class="sky" id="cloud6" src="images/big-cloud.png" alt="cloud">
+
+
+    </div>
+    <div id="welcome">
+
+        <!-- <img id="logo" src="images/bigger-logo.png" alt="logo saying botanical balanse"> -->
+        <h1>Den digitale hagen</h1>
+        <a href="game.html">
+            <img id="play" src="images/play.png" alt="play-button">
+        </a>
+        <img id="settings" src="images/cog-settings.png" alt="cog for settings">
+    </div>
+
+    <div id="changeSet">
+        <p id="exit">x</p>
+        <h2>Spillinnstillinger</h2>
+        <div id="musicControlls">
+            <img id="music" src="images/music-on.png" alt="speaker with music on">
+            <input type="range" id="volume" min="0" max="100" step="1" value="50">
+            <h3 id="volumeValue">50</h3>
+            <audio id="sound" src="audio/spring.mp3"></audio>
+        </div>
+        <img id="play" src="images/play.png" alt="play-button">
+
+    </div>
+
+    <script src="js/shared.js"></script>
+</body>
+
+</html>

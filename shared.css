@@ -1,0 +1,262 @@
+body {
+    position: relative;
+}
+
+h1 {
+    font-size: 70px;
+    color: #c4e0ea;
+    text-shadow: 2px 2px 2px;
+    position: absolute;
+    left: calc(50% - 295px);
+    margin: 10px;
+}
+
+h1,
+h2,
+h3,
+p,
+span, 
+button {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 100;
+}
+
+#settings {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: calc(5% - 50px);
+    top: calc(10% - 50px);
+}
+
+#settings:hover {
+    width: 105px;
+    height: 105px;
+    left: calc(5% - 52.5px);
+    top: calc(10% - 52.5px);
+
+    cursor: pointer;
+}
+
+
+#changeSet {
+    width: 500px;
+    height: 400px;
+    background-color: #6b778e;
+
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 250px);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    transition: 3s;
+    display: none;
+    z-index: 1000;
+}
+
+#changeSet h2 {
+    font-size: 40px;
+    color: rgb(16, 16, 69);
+
+    position: absolute;
+    left: calc(50% - 155px);
+}
+
+#changeSet #play {
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    top: calc(70% - 50px);
+    left: calc(50% - 50px);
+}
+
+#changeSet #play:hover {
+    width: 105px;
+    height: 105px;
+    top: calc(70% - 52.5px);
+    left: calc(50% - 52.5px);
+    cursor: pointer;
+}
+
+#musicControlls {
+    position: absolute;
+    top: calc(30% - 35px);
+    left: calc(50% - 165px);
+
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+#music {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    /* position: absolute;
+    top: calc(40% - 50px);
+    left: calc(50% - 50px); */
+    cursor: pointer;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    /* Remove default styling for WebKit browsers */
+    width: 40%;
+    /* Set the width of the input range */
+    height: 10px;
+    /* Set the height of the input range */
+    background: #72779f;
+    /* Set the default background color */
+    outline: none;
+    /* Remove the outline */
+    border-radius: 5px;
+    /* Set border radius */
+}
+
+/* Customize the appearance of the track */
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    /* Set the width of the track */
+    height: 10px;
+    /* Set the height of the track */
+    background: #a9b7ca;
+    /* Set the background color of the track */
+    border-radius: 5px;
+    /* Set border radius */
+}
+
+/* Customize the appearance of the thumb (handle) */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Remove default styling for WebKit browsers */
+    width: 20px;
+    /* Set the width of the thumb */
+    height: 20px;
+    /* Set the height of the thumb */
+    background: #2e344a;
+    /* Set the background color of the thumb */
+    border-radius: 50%;
+    /* Set border radius to make it circular */
+    cursor: pointer;
+    /* Set cursor to pointer */
+    margin-top: -5px;
+    /* Align the thumb vertically */
+}
+
+/* Customize the appearance of the thumb (handle) when active */
+input[type=range]:active::-webkit-slider-thumb {
+    background: #12184d;
+    /* Set the background color of the thumb when active */
+}
+
+#musicControlls h3 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+#exit,
+#out {
+    font-size: 70px;
+    position: absolute;
+    top: calc(4% - 41.5px);
+    left: calc(95% - 20.5px);
+    color: #e7ebd6;
+    cursor: pointer;
+    margin: 0px;
+}
+
+#exit:hover,
+#out:hover{
+    font-size: 72px;
+
+    position: absolute;
+    top: calc(4% - 43px);
+    left: calc(95% - 21px);
+    color: #e7ebd6;
+
+}
+
+
+#help {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: calc(8% - 50px);
+    left: calc(95% - 50px);
+
+}
+
+#help:hover {
+    width: 105px;
+    height: 105px;
+    top: calc(8% - 52.5px);
+    left: calc(95% - 52.5px);
+    cursor: help;
+}
+
+#info {
+    background-color: #e3acac;
+    width: 500px;
+    height: 400px;
+
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 250px);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    /* position: relative;
+    top: calc(50% - 200px);
+    left: calc(50% - 250px);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+
+    transition: 3s;
+    display: none;
+    z-index: 1000;
+}
+
+/* skyer som er både på forside og spill */
+
+
+.sky {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+
+}
+
+
+
+#cloud2 {
+    top: 240px;
+    width: 280px;
+    height: 200px;
+}
+
+#cloud3 {
+    top: 190px;
+    width: 350px;
+    height: 260px;
+}
+
+#cloud4 {
+    top: 330px;
+    width: 400px;
+    height: 250px;
+}
+
+#cloud5 {
+    top: 100px;
+    width: 500px;
+    height: 340px;
+    opacity: 0.4;
+}
+
+#cloud6 {
+    top: 230px;
+    width: 600px;
+    height: 380px;
+    opacity: 0.5;
+}

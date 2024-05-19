@@ -1,0 +1,500 @@
+img {
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    margin: 0;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* #play{
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: calc(70% - 50px);
+    left: calc(50% - 50px);
+}
+
+#play:hover{
+    width: 105px;
+    height: 105px;
+    top: calc(70% - 52.5px);
+    left: calc(50% - 52.5px);
+    cursor: pointer;
+} */
+
+
+#flowerpot {
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    top: calc(70% - 250px);
+    left: (50% - 250px);
+}
+
+.sad-flower {
+    height: 438px;
+    width: 475px;
+    position: fixed;
+    top: calc(74% - 219px);
+    left: calc(51% - 237.5px);
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.sky {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+
+}
+
+#sun {
+    width: 310px;
+    height: 300px;
+    top: 480px;
+    left: -180px;
+
+}
+
+#return {
+    background-color: rgb(186, 193, 202);
+    border-radius: 25px;
+
+    position: relative;
+    left: calc(50% - 111px);
+    top: calc(90% - 34px);
+    cursor: pointer;
+}
+
+#return:hover {
+    width: 230px;
+    height: 70px;
+    left: calc(50% - 115px);
+    top: calc(90% - 35px);
+}
+
+
+#return h3 {
+    font-size: 20px;
+}
+
+#coin {
+    width: 60px;
+    height: 60px;
+
+}
+
+#saldo {
+    font-size: 40px;
+}
+
+.coins {
+    width: 254;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+}
+
+#yourCoins {
+    position: relative;
+    left: calc(50% - 127px);
+    top: calc(15% - 30px);
+}
+
+#money-seed {
+    position: absolute;
+    left: calc(72% - 50px);
+    top: calc(77% - 30px);
+    cursor: pointer;
+}
+
+#money-water {
+    position: absolute;
+    left: calc(85% - 50px);
+    top: calc(72% - 30px);
+    cursor: pointer;
+}
+
+#priceS {
+    font-size: 40px;
+    color: black;
+}
+
+#priceW {
+    font-size: 40px;
+    color: black;
+}
+
+#table {
+    width: 600px;
+    height: 600px;
+
+    position: absolute;
+    left: calc(80% - 300px);
+    top: calc(73% - 300px);
+}
+
+#plate {
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+    left: calc(72% - 100px);
+    top: calc(70% - 100px);
+}
+
+#seed {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    left: calc(72% - 50px);
+    top: calc(68% - 50px);
+}
+
+#watering-can {
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    left: calc(85% - 125px);
+    top: calc(60% - 125px);
+}
+
+#pooring {
+    display: none;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    left: calc(55% - 125px);
+    top: calc(35% - 125px);
+}
+
+.watering-can-pooring {
+    rotate: -45deg;
+}
+
+/* css til snake-spillet */
+
+#openGame {
+    font-size: 20px;
+    width: 150px;
+    padding: 5px;
+    margin: 10px;
+
+    background-color: #e7ebd6;
+    cursor: pointer;
+}
+
+#snakeGame {
+    width: 800px;
+    height: 700px;
+    background-color: rgb(101, 141, 101);
+
+    position: absolute;
+    left: calc(50% - 400px);
+    top: calc(50% - 350px);
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+#snakeGame h2 {
+    font-size: 50px;
+    color: #e7ebd6;
+    text-align: center;
+    margin: 10px;
+
+}
+
+#gameInstructions {
+    width: 500px;
+    height: 500px;
+    color: black;
+    background-color: #e7ebd6;
+    z-index: 1000;
+
+    position: absolute;
+    left: calc(50% - 250px);
+    top: calc(58% - 250px);
+
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#gameInstructions h3 {
+    font-size: 35px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#gameInstructions p {
+    font-size: 22px;
+    padding: 0 20px;
+    margin: 0;
+}
+
+#images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#how {
+    width: 200px;
+    height: 200px;
+}
+
+#playGame {
+    height: 100px;
+    width: 100px;
+    padding: 0 50px;
+    cursor: pointer;
+}
+
+#playGame:hover {
+    height: 105px;
+    width: 105px;
+    padding: 0 47.5px;
+}
+
+#loss {
+    background-color: #b87272;
+    color: #e7ebd6;
+    width: 400px;
+    height: 200px;
+    height: fit-content;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 166px);
+
+    z-index: 1500;
+    padding: 10px;
+
+    display: none;
+}
+
+#loss h3 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+#loss p {
+    font-size: 25px;
+    text-align: center;
+}
+
+#newRound,
+#back {
+    padding: 5px;
+    border: 2px solid #934a4a;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#newRound:hover,
+#back:hover {
+    text-decoration: underline solid 2px #934a4a;
+}
+
+
+#exitGame {
+    font-size: 70px;
+    position: absolute;
+    top: calc(-7% - 35px);
+    left: calc(97% - 35px);
+    color: #e7ebd6;
+    cursor: pointer;
+}
+
+#exitGame:hover {
+    font-size: 72px;
+
+    position: absolute;
+    top: calc(-7% - 37px);
+    left: calc(97% - 35px);
+    color: #e7ebd6;
+
+}
+
+canvas {
+    display: none;
+    border-style: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#textGame {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#points {
+    height: 50px;
+    margin: -5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+#score {
+    font-size: 30px;
+}
+
+#coinGame {
+    width: 40px;
+    height: 40px;
+}
+
+#howTo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#howTo #welcome,
+#howTo #sowSeed,
+#howTo #waterPlant {
+    width: 600px;
+    height: 500px;
+    background-color: #e7ebd6;
+    border: 15px solid #c9ceaf;
+
+    position: absolute;
+    top: calc(40% - 250px);
+    left: calc(50% - 300px);
+
+}
+
+#howTo div:first-child {
+    z-index: 1;
+}
+
+#howTo div:nth-child(2) {
+    z-index: 1;
+}
+
+#howTo div:nth-child(3) {
+    z-index: 1;
+}
+
+#navigation-button {
+    text-align: center;
+    position: relative;
+    top: calc(68% - 9px);
+
+    z-index: 1000;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    background-color: #cac1c1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 1s;
+}
+
+.active,
+.dot:hover {
+    background-color: #8b6c6c;
+    transition: 1s;
+}
+
+.slider {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.slider:first-child {
+    opacity: 1;
+}
+
+#welcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    align-items: center;
+}
+
+
+#sowSeed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    align-items: center;
+
+}
+
+#waterPlant {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    align-items: center;
+
+}
+
+#exitAndPlay {
+    font-size: 70px;
+    position: absolute;
+    top: calc(4% - 41.5px);
+    left: calc(95% - 20.5px);
+    color: #23241e;
+    cursor: pointer;
+    margin: 0px;
+}
+
+
+#howTo h3 {
+    font-size: 50px;
+    text-align: center;
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+#howTo p {
+    font-size: 26px;
+    padding: 10px;
+}
+
+.illustration {
+    width: 330px;
+    height: 330px;
+    z-index: 1;
+
+}
+
+#hurra{
+    margin: 120px;
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    z-index: 1;
+    display: none;
+    position: relative;
+    background-color: #d6e3ebbd;
+}

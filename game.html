@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Den digitale hagen </title>
+
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="shared.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="home">
+        <div id="clouds">
+            <img class="sky" id="sun" src="images/sun.png" alt="sun">
+            <img class="sky" id="cloud1" src="images/cloud--6.png" alt="cloud">
+            <img class="sky" id="cloud2" src="images/cloud-3.png" alt="cloud">
+            <img class="sky" id="cloud3" src="images/cloud-4.png" alt="cloud">
+            <img class="sky" id="cloud4" src="images/cloud-6.png" alt="cloud">
+            <img class="sky" id="cloud5" src="images/bigger-cloud.png" alt="cloud">
+            <img class="sky" id="cloud6" src="images/big-cloud.png" alt="cloud">
+
+
+        </div>
+        <h1>Den digitale hagen</h1>
+        <div id="flowerpot">
+            <img id="flower" src="images/empty-pot.png" alt="flower">
+            <!-- <img id="flower" class="sad-flower" src="images/sad-center.png" alt=""> -->
+        </div>
+    </section>
+    <section id="gameSettings">
+        <img id="settings" src="images/cog-settings.png" alt="cog for settings">
+
+        <div id="changeSet">
+            <p id="exit">x</p>
+            <h2>Spillinnstillinger</h2>
+            <div id="musicControlls">
+                <img id="music" src="images/music-medium.png" alt="speaker with music on">
+                <input type="range" id="volume" min="0" max="100" step="1" value="50">
+                <h3 id="volumeValue"></h3>
+                <audio id="sound" src="audio/spring.mp3"></audio>
+            </div>
+            <!-- <img id="play" src="images/play.png" alt="play-button"> -->
+            <a href="index.html"><button id="return">
+                    <h3>Returner til forsiden</h3>
+                </button></a>
+        </div>
+    </section>
+
+    <div class="coins" id="yourCoins">
+        <img id="coin" src="images/coin.png" alt="coin">
+        <p id="saldo"></p>
+        <button id="openGame">Spill for å tjene penger</button>
+    </div>
+
+    <img id="help" src="images/help.png" alt="questionmark button">
+    <section id="howTo">
+        <div id="welcome" class="slider">
+            <h3>Din digitale hage</h3>
+            <p> Velkommen til din digitale hage,
+                hvor du nå har fått ansvar for å plante en blomst som skal blomstre.
+                Følger du instruksene godt vil du ha en blomst å beundre om ikke lenge.
+            </p>
+            <img class="illustration" src="images/empty-pot-smaller.png" alt="empty pot">
+        </div>
+        <div id="sowSeed" class="slider">
+            <h3>Så ditt frø</h3>
+            <p> Spar opp penger så du har råd til et frø.
+                Dette frøet sår du for å sette planten din i jord.
+            </p>
+            <img class="illustration" src="images/seed.png" alt="seed">
+        </div>
+        <div id="waterPlant" class="slider">
+            <span id="exitAndPlay">x</span>
+            <h3>Fortsett å gro</h3>
+            <p> Spar opp enda mer penger for å kjøpe vann.
+                For at planten din skal gro trenger den vann.
+                Ikke bli bekymret om planten ser litt trist ut, den trenger nok bare litt mer vann.
+            </p>
+            <img class="illustration" src="images/watering-can.png" alt="watering-can">
+        </div>
+        <div id="navigation-button">
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
+        </div>
+
+    </section>
+
+    <img id="table" src="images/table.png" alt="table">
+    <img id="plate" src="images/plate.png" alt="plate">
+    <img id="seed" src="images/seed.png" alt="seed">
+    <img id="watering-can" src="images/watering-can.png" alt="waterig-can">
+    <img id="pooring" class="watering-can-pooring" src="images/watering.png" alt="watering-can watering">
+
+    <div class="coins" id="money-seed">
+        <img id="coin" src="images/coin.png" alt="coin">
+        <p id="priceS">25</p>
+    </div>
+    <div class="coins" id="money-water">
+        <img id="coin" src="images/coin.png" alt="coin">
+        <p id="priceW">20</p>
+    </div>
+
+
+    <div id="snakeGame">
+        <div id="gameInstructions">
+            <h3>Tjen penger!</h3>
+            <p> Ved å hjelpe slyngplanten med å nå fram til området hvor solstrålen lyser
+                tjener du penger som du kan bruke på planten din.
+                Du bruker piltastene til å styre slyngplanten!
+                Trykk på play knappen når du er klar.
+                <br><br>
+                Tips: Du kan ikke treffe veggene eller deg selv!
+            </p>
+            <div id="images">
+                <img id="how" src="images/arrow-keys.png" alt="musetastene med piler">
+                <img id="playGame" src="images/play.png" alt="play knapp">
+            </div>
+        </div>
+        <div id="loss">
+            <h3>GAME OVER</h3>
+            <p>Det var leit, men det trenger ikke å være over helt enda.</p>
+            <p id="newRound">Saml inn penger og spill på nytt</p>
+            <p id="back">Saml inn penger og gå tilbake til planten din.</p>
+
+        </div>
+        <p id="exitGame">x</p>
+        <div id="textGame">
+            <h2>Klatreplanten</h2>
+            <div id="points">
+                <img id="coinGame" src="images/coin.png" alt="coin">
+                <span id="score">0</span>
+            </div>
+        </div>
+        <canvas id="gameCanvas" width="500" height="500"></canvas>
+
+    </div>
+
+    <h3 id="hurra">
+        Hurra! Nå er blomsten din fantastisk!
+        Du kan nå si deg fornøyd, eller fortsette å spille med klatreplanten for å se hvor mye penger du klarer å tjene.
+    </h3>
+
+    <script src="js/shared.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
